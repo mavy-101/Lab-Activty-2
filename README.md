@@ -1,1 +1,1 @@
-# Lab-Activty-2
+# Lab-Activity-2
