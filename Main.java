@@ -1,20 +1,11 @@
 public class Main {
+
     public static void main(String[] args) {
 
-        Vehicle firstCar = new Vehicle();
-        firstCar.brand = "Chevrolet";
-        firstCar.model = "Camaro";
-        firstCar.year = 2015;
+        Vehicle firstCar = new Vehicle("Chevrolet", "Camaro", 2015);
+        Vehicle secondCar = new Vehicle("Mazda", "RX-7", 1990);
+        Vehicle thirdCar = new Vehicle("Subaru", "BRZ", 2023);
 
-        Vehicle secondCar = new Vehicle();
-        secondCar.brand = "Mazda";
-        secondCar.model = "RX-7";
-        secondCar.year = 1990;
-
-        Vehicle thirdCar = new Vehicle();
-        thirdCar.brand = "Subaru";
-        thirdCar.model = "BRZ";
-        thirdCar.year = 2023;
 
         System.out.println("=== FIRST CAR ===");
         firstCar.displayInfo();
