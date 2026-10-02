@@ -1,3 +1,4 @@
+```java
 public class Main {
     public static void main(String[] args) {
 
@@ -36,3 +37,4 @@ public class Main {
         System.out.println("Vintage: " + thirdCar.isVintage());
     }
 }
+```
