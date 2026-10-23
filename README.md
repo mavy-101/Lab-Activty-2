@@ -1,52 +1,16 @@
-# Lab 4 - Vehicle Encapsulation
-**Name:** Cabahug, Mave A.
-**Section:** BSIT 2A
+# Semifinals
 
-## Program Output
+## Lab Activity 1 - Polymorphism
 
-=== FIRST CAR ===
-Brand: Chevrolet
-Model: Camaro
-Year: 2015
-Age: 11
-Vintage: false
+### Description
+This project demonstrates polymorphism and inheritance in Java using a vehicle example.
 
-=== SECOND CAR ===
-Brand: Mazda
-Model: RX-7
-Year: 1990
-Age: 36
-Vintage: true
+### Classes
+* **Vehicle.java** – Base class for vehicles.
+* **Car.java** – Represents a car.
+* **Motorcycle.java** – Represents a motorcycle.
+* **Truck.java** – Represents a truck.
+* **Main.java** – Main class used to run the program.
 
-=== THIRD CAR ===
-Brand: Subaru
-Model: BRZ
-Year: 2023
-Age: 3
-Vintage: false
-
-=== Getters ===
-Brand: Chevrolet
-Model: Camaro
-Year: 2015
-
-=== setYear(2000) ===
-Return value: true
-Stored year: 2000
-Age: 26
-Vintage: true
-
-=== setYear(1885) ===
-Return value: false
-Stored year: 2000
-
-=== setYear(2027) ===
-Return value: false
-Stored year: 2000
-
-=== Constructor with year 1885 ===
-Initial year: 2026
-
-=== Constructor with year 2027 ===
-Initial year: 2026
-
+### Language
+* Java
