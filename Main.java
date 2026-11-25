@@ -1,32 +1,44 @@
-```java
 public class Main {
+
+    public static void performService(Serviceable item) {
+        item.service();
+    }
+
     public static void main(String[] args) {
 
-        Vehicle firstCar = new Vehicle();
-        firstCar.brand = "Chevrolet";
-        firstCar.model = "Camaro";
-        firstCar.year = 2015;
+        Car car = new Car("Hyundai", "Elantra", 2021, 4);
+        Motorcycle motorcycle = new Motorcycle("Kawasaki", "Ninja 400", 2023, 399);
+        Truck truck = new Truck("Mitsubishi", "Fuso Fighter", 2021, 8.5);
+        Printer printer = new Printer();
 
-        Vehicle secondCar = new Vehicle();
-        secondCar.brand = "Mazda";
-        secondCar.model = "RX-7";
-        secondCar.year = 1990;
+        Serviceable[] serviceables = {
+            car,
+            motorcycle,
+            truck,
+            printer
+        };
 
-        Vehicle thirdCar = new Vehicle();
-        thirdCar.brand = "Subaru";
-        thirdCar.model = "BRZ";
-        thirdCar.year = 2023;
+        System.out.println("=== Serviceable Objects ===");
 
-        System.out.println("=== FIRST CAR ===");
-        firstCar.displayInfo();
-        System.out.println("Age: " + firstCar.calculateAge());
-        System.out.println("Vintage: " + firstCar.isVintage());
+        for (Serviceable item : serviceables) {
+            performService(item);
+        }
 
         System.out.println();
 
-        System.out.println("=== SECOND CAR ===");
-        secondCar.displayInfo();
-        System.out.println("Age: " + secondCar.calculateAge());
-        System.out.println("Vintage: " + secondC
-```
+        Vehicle[] vehicles = {
+            car,
+            motorcycle,
+            truck
+        };
 
+        System.out.println("=== Vehicle Information and Movement ===");
+
+        for (Vehicle vehicle : vehicles) {
+            vehicle.displayInfo();
+            vehicle.move();
+
+            System.out.println();
+        }
+    }
+}
