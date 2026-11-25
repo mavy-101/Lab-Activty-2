@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     private String brand;
     private String model;
     private int year;
@@ -36,9 +36,7 @@ public class Vehicle {
     }
 
     public void displayInfo() {
-        System.out.println("Brand: " + brand);
-        System.out.println("Model: " + model);
-        System.out.println("Year: " + year);
+        System.out.println("Brand: " + brand + ", Model: " + model + ", Year: " + year);
     }
 
     public int calculateAge() {
@@ -48,4 +46,18 @@ public class Vehicle {
     public boolean isVintage() {
         return calculateAge() > 25;
     }
+
+    public void startEngine() {
+        System.out.println(brand + " " + model + ": engine starts.");
+    }
+
+    public void drive(int km) {
+        System.out.println(brand + " " + model + " drove " + km + " km.");
+    }
+
+    public void drive(int km, String destination) {
+        System.out.println(brand + " " + model + " drove " + km + " km to " + destination + ".");
+    }
+
+    public abstract void move();
 }
